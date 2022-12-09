@@ -1,6 +1,5 @@
 # Installs flask, version 2.1.0 from pip3
 
-package { 'flask':
-  ensure   => '2.1.0',
-  provider => 'pipe3',
+exec { 'flask':
+  command => 'pip3-get -y install flask -v 2.1.0',
 }
