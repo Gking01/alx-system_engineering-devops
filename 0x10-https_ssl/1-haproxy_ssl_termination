@@ -1,5 +1,4 @@
-
-bal
+global
 	log /dev/log	local0
 	log /dev/log	local1 notice
 	chroot /var/lib/haproxy
@@ -49,6 +48,6 @@ frontend  beta-scribbles.tech-https-frontend
 
 backend beta-scribbles.tech-backend
         balance roundrobin
-        server 914-web-01 34.202.164.212:80 check
-        server 914-web-02 54.167.176.215:80 check
+        server 914-web-01 34.198.248.145:80 check
+        server 914-web-02 54.89.38.100:80 check
 # end of parameters
